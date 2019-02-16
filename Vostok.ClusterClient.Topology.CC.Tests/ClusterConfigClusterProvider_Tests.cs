@@ -132,20 +132,6 @@ namespace Vostok.Clusterclient.Topology.CC.Tests
         }
 
         [Test]
-        public void Should_not_react_to_new_settings_object_if_its_equal_to_previous_one()
-        {
-            SetupReplicas(Replica1, Replica2);
-
-            var result1 = provider.GetCluster();
-
-            SetupReplicas(Replica1, Replica2);
-
-            var result2 = provider.GetCluster();
-
-            result2.Should().BeSameAs(result1);
-        }
-
-        [Test]
         public void Should_ignore_replicas_with_query_string()
         {
             SetupReplicas(Replica1 + "?a=b", Replica2);

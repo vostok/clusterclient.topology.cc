@@ -41,7 +41,7 @@ namespace Vostok.Clusterclient.Topology.CC
             this.log = log ?? LogProvider.Get();
             this.path = path;
 
-            transform = new CachingTransform<ISettingsNode, Uri[]>(ParseReplicas, comparer: EqualityComparer<ISettingsNode>.Default);
+            transform = new CachingTransform<ISettingsNode, Uri[]>(ParseReplicas);
         }
 
         public IList<Uri> GetCluster() 
