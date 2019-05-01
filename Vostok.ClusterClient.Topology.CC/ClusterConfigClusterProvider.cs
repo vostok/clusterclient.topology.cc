@@ -11,7 +11,7 @@ using Vostok.Logging.Abstractions;
 namespace Vostok.Clusterclient.Topology.CC
 {
     /// <summary>
-    /// <para>An implementation of <see cref="IClusterProvider"/> that fetches and parses a topology from ClusterConfog.</para>
+    /// <para>An implementation of <see cref="IClusterProvider"/> that fetches and parses a topology from ClusterConfig.</para>
     /// <para>Provided <see cref="ClusterConfigPath"/> should point to a file containing replica addresses in ClusterConfig (such as <c>topology/hercules</c>).</para>
     /// <para>The topology file itself should contain replica addresses as a set of unkeyed values representing absolute HTTP urls.</para>
     /// <para>Scheme and port may be omitted to use default values (<c>http</c> and <c>80</c>, respectively).</para>
