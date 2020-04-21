@@ -32,7 +32,7 @@ namespace Vostok.Clusterclient.Topology.CC
                 return null;
 
             if (firstSegment.Equals(TopologyPrefix, StringComparison.OrdinalIgnoreCase))
-                return string.Join("/", path.Segments.Skip(1));
+                return string.Join(".", path.Segments.Skip(1));
 
             return path.ToString();
         }
