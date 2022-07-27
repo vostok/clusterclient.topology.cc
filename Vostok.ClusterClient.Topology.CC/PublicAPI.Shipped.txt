@@ -1,0 +1,5 @@
+static Vostok.Clusterclient.Topology.CC.IClusterClientConfigurationExtensions.SetupClusterConfigTopology(this Vostok.Clusterclient.Core.IClusterClientConfiguration self, Vostok.ClusterConfig.Client.Abstractions.IClusterConfigClient client, Vostok.ClusterConfig.Client.Abstractions.ClusterConfigPath path) -> void
+Vostok.Clusterclient.Topology.CC.ClusterConfigClusterProvider
+Vostok.Clusterclient.Topology.CC.ClusterConfigClusterProvider.ClusterConfigClusterProvider(Vostok.ClusterConfig.Client.Abstractions.IClusterConfigClient client, Vostok.ClusterConfig.Client.Abstractions.ClusterConfigPath path, Vostok.Logging.Abstractions.ILog log) -> void
+Vostok.Clusterclient.Topology.CC.ClusterConfigClusterProvider.GetCluster() -> System.Collections.Generic.IList<System.Uri>
+Vostok.Clusterclient.Topology.CC.IClusterClientConfigurationExtensions
