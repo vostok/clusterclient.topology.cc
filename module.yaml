@@ -7,6 +7,16 @@ notests *default:
 
   install:
     - Vostok.ClusterClient.Topology.CC/bin/Release/netstandard2.0/Vostok.ClusterClient.Topology.CC.dll
+    - groups:
+        - target-framework: "netstandard2.0"
+          libraries:
+            - Vostok.ClusterClient.Topology.CC/bin/Release/netstandard2.0/Vostok.ClusterClient.Topology.CC.dll
+        - target-framework: "net6.0"
+          libraries:
+            - Vostok.ClusterClient.Topology.CC/bin/Release/net6.0/Vostok.ClusterClient.Topology.CC.dll
+        - target-framework: "net8.0"
+          libraries:
+            - Vostok.ClusterClient.Topology.CC/bin/Release/net8.0/Vostok.ClusterClient.Topology.CC.dll
 
   deps:
     - vostok.devtools
@@ -22,6 +32,19 @@ full-build > notests:
     - vostok.devtools@with-net6.0
     - vostok.logging.console
   
+  install:
+    - Vostok.ClusterClient.Topology.CC/bin/Release/netstandard2.0/Vostok.ClusterClient.Topology.CC.dll
+    - groups:
+        - target-framework: "netstandard2.0"
+          libraries:
+            - Vostok.ClusterClient.Topology.CC/bin/Release/netstandard2.0/Vostok.ClusterClient.Topology.CC.dll
+        - target-framework: "net6.0"
+          libraries:
+            - Vostok.ClusterClient.Topology.CC/bin/Release/net6.0/Vostok.ClusterClient.Topology.CC.dll
+        - target-framework: "net8.0"
+          libraries:
+            - Vostok.ClusterClient.Topology.CC/bin/Release/net8.0/Vostok.ClusterClient.Topology.CC.dll
+
   build:
     target: Vostok.ClusterClient.Topology.CC.sln
     configuration: Release
